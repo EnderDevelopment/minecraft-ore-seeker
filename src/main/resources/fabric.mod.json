@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "orefinder",
+  "version": "${version}",
+  "name": "Ore Finder",
+  "description": "A mod to find ores in Minecraft",
+  "authors": ["EnderDevelopment"],
+  "contact": {
+    "homepage": "https://enderdevelopment.com",
+    "sources": "https://github.com/enderdevelopment/orefinder"
+  },
+  "license": "MIT",
+  "icon": "assets/orefinder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.enderdevelopment.orefinder.OreFinder"
+    ]
+  },
+  "mixins": [
+    "orefinder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.20.4",
+    "fabric-api": "*"
+  }
+}
